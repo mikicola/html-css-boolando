@@ -12,25 +12,41 @@ html{
 main{
     max-width: 900px;
     margin: 1.5em auto;
-    background-color: aqua;
+}
+
+.container{
+    max-width: 100%;
+    /* width: 100%; */
+    background: turquoise;
+    
+}
+
+.container::after{
+    content: '';
+    display: table;
+    clear: both;
 }
 
 .column{
     float: left;
     display: inline-block;
-    width: 300px;
+    width:calc((99% / 3) - .5em);
+}
+
+.central{
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .photo{
-    width: 300px;
+    width: 100%;
 }
 
 .photo-back{
-    width: 300px;
+    width: 100%;
 }
 
 .hover-animation {
-   
     position: relative;
     display: inline-block;
     
@@ -44,4 +60,29 @@ main{
 }
 .hover-animation:hover .photo-back {
     display: inline;
+}
+
+.brand{
+    font-size: .8em;
+    font-weight: 100;
+}
+
+.description{
+    font-size: 1em;
+    text-transform: uppercase;
+    
+}
+
+.price{
+    font-size: .9em;
+    font-weight: 100;
+}
+
+#red{
+    color: tomato;
+    font-weight: 600;
+}
+
+.second{
+    margin-top: 2em;
 }
