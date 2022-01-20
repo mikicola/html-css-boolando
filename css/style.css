@@ -31,6 +31,7 @@ main{
     float: left;
     display: inline-block;
     width:calc((99% / 3) - .5em);
+    position: relative;
 }
 
 .central{
@@ -60,6 +61,50 @@ main{
 }
 .hover-animation:hover .photo-back {
     display: inline;
+}
+
+.heart{
+    position: absolute;
+    top: .5em;
+    right: 0em;
+    font-size: 1.5em;
+    z-index: 11;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+    line-height: 1.5em;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.info{
+    position: absolute;
+    bottom: 7em;
+    font-size: .6em;
+    z-index: 11;
+}
+.sconto,
+.sostenibilita{
+    line-height: 2em;
+    text-align: center;
+    vertical-align: middle;
+    height: 2em;
+    color: white;
+    font-weight: 600;
+    border: .3em;
+    display: inline-block;
+}
+
+.sconto{
+    width: 3em;
+    background-color: #f00038;
+}
+
+
+.sostenibilita{
+    width: 7em;
+    background-color: #00875E;
+    
 }
 
 .brand{
