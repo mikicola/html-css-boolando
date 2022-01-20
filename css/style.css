@@ -7,3 +7,41 @@
 html{
     font-family: Helvetica, Arial, sans-serif;
 }
+
+
+main{
+    max-width: 900px;
+    margin: 1.5em auto;
+    background-color: aqua;
+}
+
+.column{
+    float: left;
+    display: inline-block;
+    width: 300px;
+}
+
+.photo{
+    width: 300px;
+}
+
+.photo-back{
+    width: 300px;
+}
+
+.hover-animation {
+   
+    position: relative;
+    display: inline-block;
+    
+}
+.hover-animation .photo-back {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.hover-animation:hover .photo-back {
+    display: inline;
+}
