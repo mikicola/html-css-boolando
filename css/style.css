@@ -15,10 +15,8 @@ main{
 }
 
 .container{
-    max-width: 100%;
-    /* width: 100%; */
+    width: 100%;
     /* background: turquoise; */
-    
 }
 
 .container::after{
@@ -30,14 +28,26 @@ main{
 .column{
     float: left;
     display: inline-block;
-    width:calc((99% / 3) - .5em);
+    width: calc((100% - 2rem) / 3);
+    min-width: 200px;
     position: relative;
+    
+    margin-bottom: 2em;
 }
 
-.central{
+.column:nth-child(3n+2) {
+	margin-right: 1rem;
+	margin-left: 1rem;
+}
+
+.column:hover {
+	cursor: pointer;
+}
+
+/* .central{
     margin-left: 1em;
     margin-right: 1em;
-}
+} */
 
 .photo{
     width: 100%;
@@ -87,6 +97,7 @@ main{
     font-size: .6em;
     z-index: 11;
 }
+
 .sconto,
 .sostenibilita{
     line-height: 2em;
